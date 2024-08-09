@@ -6,6 +6,8 @@
 # BookmarkManager
 
 BookmarkManager is a command-line interface (CLI) tool designed to import and export bookmarks between different web browsers such as Google Chrome and Microsoft Edge. It also allows setting the startup page of a browser.
+Don't forget to unzip the compressed "BookMark Manager" archive containing the application.
+
 
 ## Features
 
@@ -121,6 +123,8 @@ To find the path where the browser's bookmarks are located, use the following UR
 # BookmarkManager
 
 BookmarkManager est un outil en ligne de commande (CLI) conçu pour importer et exporter les favoris (bookmarks) entre différents navigateurs web tels que Google Chrome et Microsoft Edge. Il permet également de définir la page de démarrage d'un navigateur.
+N'oubliez pas de décompresser l'archive "BookMark Manager" compressée contenant l'application.
+
 
 ## Fonctionnalités
 
