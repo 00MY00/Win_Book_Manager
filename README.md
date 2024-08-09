@@ -1,3 +1,8 @@
+Voici la version anglaise de votre texte :
+
+---
+
+```markdown
 ############
 # English #
 ############
@@ -40,6 +45,75 @@ To export bookmarks from a browser to a JSON file:
 ```bash
 .\BookmarkManager.exe --mode export --path "C:\Path\To\Browser\Profile" --export-file "C:\Path\To\Save\MyBookmarks.json"
 ```
+
+**Example**: Export bookmarks from Microsoft Edge:
+
+```bash
+.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default" --export-file "C:\MyDocuments\EdgeBookmarks.json"
+```
+
+### Importing Bookmarks
+
+To import bookmarks from a JSON file into a browser:
+
+```bash
+.\BookmarkManager.exe --mode import --path "C:\Path\To\Browser\Profile" --import-file "C:\Path\To\MyBookmarks.json"
+```
+
+**Example**: Import bookmarks into Google Chrome:
+
+```bash
+.\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --import-file "C:\MyDocuments\EdgeBookmarks.json"
+```
+
+### Setting the Startup Page
+
+To set a startup page in a browser:
+
+```bash
+.\BookmarkManager.exe --mode export --path "C:\Path\To\Browser\Profile" --startup "https://www.example.com"
+```
+
+**Example**: Set the startup page in Google Chrome:
+
+```bash
+.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --startup "https://www.example.com"
+```
+
+### Using Default Paths
+
+If you do not specify the export or import path, the program will use the default paths.
+
+**Example**: Export bookmarks from Microsoft Edge using the default path for `ExportedBookmarks.json`:
+
+```bash
+.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default"
+```
+
+**Example**: Import bookmarks into Google Chrome using the default `ExportedBookmarks.json` file:
+
+```bash
+.\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default"
+```
+
+## Notes
+
+- Ensure that the specified path for the browser's profile is correct and that the `Bookmarks` file exists.
+- During import, the `Bookmarks.bak` file is also updated to prevent accidental restoration of old bookmarks.
+
+## Troubleshooting
+
+- If the program displays a message that the `Bookmarks` file does not exist, it may be because there are no bookmarks in the browser profile. Manually add a bookmark to create the file.
+- Check the browser profile paths using `chrome://version/` for Chrome and `edge://version/` for Edge to confirm the exact path.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/00MY00/Win_Book_Manager/blob/main/LICENSE) file for more details.
+
+---
+
+To find the path where the browser's bookmarks are located, use the following URLs: [EDG](https://edge://version/) for Edge or [CHROM](https://chrome://version/) for Chrome.
+
 
 ---
 ---
