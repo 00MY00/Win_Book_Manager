@@ -45,7 +45,7 @@ To export bookmarks from a browser to a JSON file:
 **Example**: Export bookmarks from Microsoft Edge:
 
 ```bash
-.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default" --export-file "C:\MyDocuments\EdgeBookmarks.json"
+.\BookmarkManager.exe --mode export --path "C:\Users\%USERNAME%\AppData\Local\Microsoft\Edge\User Data\Default" --export-file "C:\MyDocuments\EdgeBookmarks.json"
 ```
 
 ### Importing Bookmarks
@@ -59,7 +59,7 @@ To import bookmarks from a JSON file into a browser:
 **Example**: Import bookmarks into Google Chrome:
 
 ```bash
-.\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --import-file "C:\MyDocuments\EdgeBookmarks.json"
+.\BookmarkManager.exe --mode import --path "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default" --import-file "C:\MyDocuments\EdgeBookmarks.json"
 ```
 
 ### Setting the Startup Page
@@ -73,7 +73,7 @@ To set a startup page in a browser:
 **Example**: Set the startup page in Google Chrome:
 
 ```bash
-.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --startup "https://www.example.com"
+.\BookmarkManager.exe --mode export --path "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default" --startup "https://www.example.com"
 ```
 
 ### Using Default Paths
@@ -83,13 +83,13 @@ If you do not specify the export or import path, the program will use the defaul
 **Example**: Export bookmarks from Microsoft Edge using the default path for `ExportedBookmarks.json`:
 
 ```bash
-.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default"
+.\BookmarkManager.exe --mode export --path "C:\Users\%USERNAME%\AppData\Local\Microsoft\Edge\User Data\Default"
 ```
 
 **Example**: Import bookmarks into Google Chrome using the default `ExportedBookmarks.json` file:
 
 ```bash
-.\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default"
+.\BookmarkManager.exe --mode import --path "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default"
 ```
 
 ## Notes
@@ -160,7 +160,7 @@ Pour exporter les favoris d'un navigateur vers un fichier JSON :
 **Exemple** : Exporter les favoris de Microsoft Edge :
 
 ```bash
-.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default" --export-file "C:\MesDocuments\EdgeBookmarks.json"
+.\BookmarkManager.exe --mode export --path "C:\Users\%USERNAME%\AppData\Local\Microsoft\Edge\User Data\Default" --export-file "C:\MesDocuments\EdgeBookmarks.json"
 ```
 
 ### Importer les Favoris
@@ -174,7 +174,7 @@ Pour importer les favoris depuis un fichier JSON dans un navigateur :
 **Exemple** : Importer les favoris dans Google Chrome :
 
 ```bash
-.\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --import-file "C:\MesDocuments\EdgeBookmarks.json"
+.\BookmarkManager.exe --mode import --path "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default" --import-file "C:\MesDocuments\EdgeBookmarks.json"
 ```
 
 ### Définir la Page de Démarrage
@@ -188,7 +188,7 @@ Pour définir une page de démarrage dans un navigateur :
 **Exemple** : Définir la page de démarrage dans Google Chrome :
 
 ```bash
-.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --startup "https://www.example.com"
+.\BookmarkManager.exe --mode export --path "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default" --startup "https://www.example.com"
 ```
 
 ### Utilisation avec les Chemins par Défaut
@@ -198,13 +198,13 @@ Si vous ne spécifiez pas le chemin d'exportation ou d'importation, le programme
 **Exemple** : Exporter les favoris de Microsoft Edge en utilisant le chemin par défaut pour ExportedBookmarks.json :
 
 ```bash
-.\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default"
+.\BookmarkManager.exe --mode export --path "C:\Users\%USERNAME%\AppData\Local\Microsoft\Edge\User Data\Default"
 ```
 
 **Exemple** : Importer les favoris dans Google Chrome en utilisant le fichier ExportedBookmarks.json par défaut :
 
 ```bash
-.\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default"
+.\BookmarkManager.exe --mode import --path "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default"
 ```
 
 ## Notes
