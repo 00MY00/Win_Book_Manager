@@ -39,12 +39,11 @@ To export bookmarks from a browser to a JSON file:
 
 ```bash
 .\BookmarkManager.exe --mode export --path "C:\Path\To\Browser\Profile" --export-file "C:\Path\To\Save\MyBookmarks.json"
+```
 
 
 
 
-
----
 ---
 
 ############
@@ -157,3 +156,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](https://github.com/00M
 ---
 
 Pour connaître le chemin où se trouvent les favoris (Bookmarks) des navigateurs, utilisez les URLs suivantes : [EDG](https://edge://version/) pour Edge ou [CHROM](https://chrome://version/) pour Chrome.
+
+---
+---
+
+
+
