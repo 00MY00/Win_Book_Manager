@@ -1,8 +1,4 @@
-Voici la version anglaise de votre texte :
-
 ---
-
-```markdown
 ############
 # English #
 ############
