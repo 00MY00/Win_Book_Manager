@@ -153,43 +153,43 @@ BookmarkManager est un outil en ligne de commande (CLI) conçu pour importer et 
 
 Pour exporter les favoris d'un navigateur vers un fichier JSON :
 
-bash
+```bash
 .\BookmarkManager.exe --mode export --path "C:\Chemin\Vers\Le\Profil\Du\Navigateur" --export-file "C:\Chemin\Vers\Exporter\MesFavoris.json"
-
+```
 
 **Exemple** : Exporter les favoris de Microsoft Edge :
 
-bash
+```bash
 .\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default" --export-file "C:\MesDocuments\EdgeBookmarks.json"
-
+```
 
 ### Importer les Favoris
 
 Pour importer les favoris depuis un fichier JSON dans un navigateur :
 
-bash
+```bash
 .\BookmarkManager.exe --mode import --path "C:\Chemin\Vers\Le\Profil\Du\Navigateur" --import-file "C:\Chemin\Vers\LeFichier\MesFavoris.json"
-
+```
 
 **Exemple** : Importer les favoris dans Google Chrome :
 
-bash
+```bash
 .\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --import-file "C:\MesDocuments\EdgeBookmarks.json"
-
+```
 
 ### Définir la Page de Démarrage
 
 Pour définir une page de démarrage dans un navigateur :
 
-bash
+```bash
 .\BookmarkManager.exe --mode export --path "C:\Chemin\Vers\Le\Profil\Du\Navigateur" --startup "https://www.example.com"
-
+```
 
 **Exemple** : Définir la page de démarrage dans Google Chrome :
 
-bash
+```bash
 .\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default" --startup "https://www.example.com"
-
+```
 
 ### Utilisation avec les Chemins par Défaut
 
@@ -197,15 +197,15 @@ Si vous ne spécifiez pas le chemin d'exportation ou d'importation, le programme
 
 **Exemple** : Exporter les favoris de Microsoft Edge en utilisant le chemin par défaut pour ExportedBookmarks.json :
 
-bash
+```bash
 .\BookmarkManager.exe --mode export --path "C:\Users\a.banziger\AppData\Local\Microsoft\Edge\User Data\Default"
-
+```
 
 **Exemple** : Importer les favoris dans Google Chrome en utilisant le fichier ExportedBookmarks.json par défaut :
 
-bash
+```bash
 .\BookmarkManager.exe --mode import --path "C:\Users\a.banziger\AppData\Local\Google\Chrome\User Data\Default"
-
+```
 
 ## Notes
 
